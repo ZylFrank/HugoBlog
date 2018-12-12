@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development on 标题</title>
+    <link>http://localhost/categories/development/</link>
+    <description>Recent content in Development on 标题</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 27 Nov 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>创建一个Hugo网站</title>
+      <link>http://localhost/posts/creating-a-new-hugo-website/</link>
+      <pubDate>Tue, 27 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/posts/creating-a-new-hugo-website/</guid>
+      <description>Hugo Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。如果你用过Jekyll那么Hugo对你就并不陌生。可以使用GitHub快速生成一个静态网站。Hugo使用markdown的写法为你生成网站。
+相关链接： hugo 中文网 hugo 官方文档
+使用Hugo构建自己的blog 这里我是用docker来启动Hugo
+ 移步这里下载主题  git clone https://github.com/htr3n/hyde-hyde.git themes/hyde-hyde   修改文件目录  $ mv hyde-hyde/themes/exampleSite . $ mkdir -p exampleSite/themes $ mv hyde-hyde/themes exampleSite/themes/.   使用docker运行Hugo  docker run --rm -it -v $PWD:/src -p 1313:1313 -u hugo jguyomard/hugo-builder hugo server -w --bind=0.0.0.0   在GitHub中创建一个仓库名字为 yourgithubname.github.io
+ 修改Hugo的配置文件(config.toml)
+  baseurl = &amp;quot;https://yourgithubname.github.io/&amp;quot;   编译静态资源(编译成功后会生成一个public目录)  docker run --rm -it -v $PWD:/src -u hugo jguyomard/hugo-builder hugo   cd public  git init git add .</description>
+    </item>
+    
+    <item>
+      <title>浏览器自动化测试框架</title>
+      <link>http://localhost/posts/selenium/</link>
+      <pubDate>Tue, 27 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/posts/selenium/</guid>
+      <description>Introduction Selenium是一套不同的软件工具，每种工具都有不同的方法来支持测试自动化。大多数Selenium QA工程师专注于最能满足其项目需求的一个或两个工具，但学习所有工具将为您提供许多不同的选项来处理不同的测试自动化问题。整套工具产生了丰富的测试功能，专门针对所有类型的Web应用程序的测试需求。这些操作非常灵活，允许使用许多选项来定位UI元素，并将预期的测试结果与实际的应用程序行为进行比较。Selenium的一个主要功能是支持在多个浏览器平台上执行一个测试。
+官方文档
+安装 selenium pip install selenium  下载浏览器驱动 在这里下载 这里也可以
+起步  创建一个测试浏览器窗口（这里我把chrome浏览器驱动放在了同目录的bin文件夹下）  from selenium import webdriver browserName = webdriver.Chrome(&#39;./bin/chromedriver&#39;);   打开页面  browserName.get(&#39;http://www.baidu.com&#39;);  获取页面元素  按ID  element = driver.find_element_by_id(&amp;quot;coolestWidgetEvah&amp;quot;) or from selenium.webdriver.common.by import By element = driver.find_element(by=By.ID, value=&amp;quot;coolestWidgetEvah&amp;quot;)   按类名  cheeses = driver.find_elements_by_class_name(&amp;quot;cheese&amp;quot;) or from selenium.webdriver.common.by import By cheeses = driver.find_elements(By.CLASS_NAME, &amp;quot;cheese&amp;quot;)   按标签名  frame = driver.find_element_by_tag_name(&amp;quot;iframe&amp;quot;) or from selenium.</description>
+    </item>
+    
+    <item>
+      <title>Creating a New Theme</title>
+      <link>http://localhost/posts/creating-a-new-theme/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/posts/creating-a-new-theme/</guid>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+    </item>
+    
+    <item>
+      <title>Migrate to Hugo from Jekyll</title>
+      <link>http://localhost/posts/migrate-from-jekyll/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/posts/migrate-from-jekyll/</guid>
+      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
+▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    
+    <item>
+      <title>(Hu)go Template Primer</title>
+      <link>http://localhost/posts/goisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/posts/goisforlovers/</guid>
+      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
+This document is a brief primer on using go templates.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Hugo</title>
+      <link>http://localhost/posts/hugoisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost/posts/hugoisforlovers/</guid>
+      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
+Save it somewhere specific as we will be using it in the next step.
+More complete instructions are available at installing hugo
+Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
+Follow the following steps:
+ Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
+    </item>
+    
+  </channel>
+</rss>
