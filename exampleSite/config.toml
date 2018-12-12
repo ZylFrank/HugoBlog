@@ -1,0 +1,64 @@
+## Basic Configuration
+# baseurl = "https://ZylFrank.github.io/"
+baseurl = "http://localhost"
+languageCode = "en"
+
+title = "标题"
+theme = "hyde-hyde"
+
+## Hugo Built-in Features
+# disqusShortname = "your-disqus-shortname"
+# googleAnalytics = "your-google-analytics-id"
+# enableRobotsTXT = true
+
+# summarylength = 30
+
+#paginate = 5
+
+## Site Settings
+[params]
+    author = "frank"
+    title = "Title"
+    # description = "..."
+    authorimage = "/img/hugo.png"
+    dateformat = "Jan 2, 2006"
+    highlightjs = true
+    highlightjsstyle = "github"
+    # please choose either GraphComment or Disqus or Utterances
+    #GraphCommentId = "..."
+    #UtterancesRepo = "..." # https://utteranc.es/
+    #UtterancesIssueTerm = "..." # pathname, url, title, og:title
+    #UtterancesTheme = "..." # github-light or github-dark
+
+    # Table of contents
+    #toc = none, "hugo", or "tocbot"
+
+## Social Accounts
+[params.social]
+    github = "https://github.com/ZylFrank"
+    # instagram = "<username>"
+    # xing = "<username>"
+    # linkedin = "<username>"
+    # twitter = "<username>"
+    # facebook = "<username>"
+    # stackoverflow = "<username>"
+    # telegram = "<username>"
+    email = "zhangyunlongfra@163.com"
+    # gravatar = "your-email@example.com"
+
+## Main Menu
+[[menu.main]]
+    name = "文章"
+    weight = 100
+    identifier = "posts"
+    url = "/posts/"
+[[menu.main]]
+    name = "项目"
+    identifier = "portfolio"
+    weight = 200
+    url = "/portfolio/"
+[[menu.main]]
+    name = "关于"
+    identifier = "about"
+    weight = 300
+    url = "/about/"
