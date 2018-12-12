@@ -1,6 +1,6 @@
 ## Basic Configuration
 # baseurl = "https://ZylFrank.github.io/"
-baseurl = "http://localhost"
+baseurl = "http://zhangyunlong.maizedna.cn/"
 languageCode = "en"
 
 title = "标题"
