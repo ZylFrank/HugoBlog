@@ -5,15 +5,16 @@ linktitle: selenium
 title: 浏览器自动化测试框架
 categories: [ "Development", "python" ]
 tags: ["python", "browser"]
+description: "本篇介绍浏览器自动测试工具Selenium的一些使用方法"
 weight: 10
 ---
 
-
 ## Introduction
-
 Selenium是一套不同的软件工具，每种工具都有不同的方法来支持测试自动化。大多数Selenium QA工程师专注于最能满足其项目需求的一个或两个工具，但学习所有工具将为您提供许多不同的选项来处理不同的测试自动化问题。整套工具产生了丰富的测试功能，专门针对所有类型的Web应用程序的测试需求。这些操作非常灵活，允许使用许多选项来定位UI元素，并将预期的测试结果与实际的应用程序行为进行比较。Selenium的一个主要功能是支持在多个浏览器平台上执行一个测试。
 
-[官方文档](https://docs.seleniumhq.org/docs/03_webdriver.jsp#chapter03-reference)
+相关链接：
+[官方文档](https://docs.seleniumhq.org/docs/03_webdriver.jsp#chapter03-reference)、
+[语雀链接](https://www.yuque.com/weshow/python/xxzkq4)
 ## 安装 selenium
 
 ```

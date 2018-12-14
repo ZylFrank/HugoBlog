@@ -5,6 +5,7 @@ linktitle: Creating a New Hugo website
 title: 创建一个Hugo网站
 categories: [ "Development", "hugo" ]
 tags: ["hugo", "html", "css"]
+description: "使用Hugo搭建自己的Blog"
 weight: 10
 ---
 
@@ -14,7 +15,7 @@ weight: 10
 Hugo是由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。如果你用过Jekyll那么Hugo对你就并不陌生。可以使用GitHub快速生成一个静态网站。Hugo使用markdown的写法为你生成网站。
 
 相关链接：
-[hugo 中文网](http://www.gohugo.org/)
+[hugo 中文网](http://www.gohugo.org/)、
 [hugo 官方文档](https://gohugo.io/)
 
 ## 使用Hugo构建自己的blog
